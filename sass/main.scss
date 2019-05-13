@@ -95,9 +95,9 @@ header.header {
 /// main header
 .main_header {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    padding: 10px 0;
+    padding: 10px;
     background-color: #f0f0f0;
     h2 {
         color: var(--color-link);
@@ -189,19 +189,25 @@ main.main {
 ////////////////////////////
 /// main content box
 .main_content--box {
-    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    .item--box {
+        flex: 1 1 100%;
+        padding: 10px 0;
+        background-color: #fff;
+        margin-bottom: 5px;
+        cursor: pointer;
+    
+        margin: 10px;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            max-width: 100%;
+        }
+    }
 }
 
-.item--box {
-    padding: 10px 0;
-    background-color: #fff;
-    margin-bottom: 5px;
-    cursor: pointer;
-
-    margin: 10px;
-    justify-content: center;
-    align-items: center;
-}
 
 .item--text {
     display: flex;
@@ -327,12 +333,12 @@ main.main {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        .item--box {
+            margin: 10px;
+            flex: none;
+        }
     }
 
-    .item--box {
-        margin: 10px;
-        // flex: 1;
-    }
 
 }
 
