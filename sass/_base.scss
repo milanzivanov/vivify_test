@@ -1,0 +1,44 @@
+:root {
+    --color-primary: #fff;
+    --color-link: #147abf;
+    --color-btn-bg: #46b688;
+    --bg-main: #fafafa;
+    --bg-footer: #666;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+*,
+**::before,
+**::after {
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: border-box;
+    // font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+}
+
+body {
+    background-color: var(--color-primary);
+    font-weight: 400;
+    font-family: Arial, 'Open Sans', sans-serif;
+    line-height: 1.6;
+}
+
+.wrapper {
+    max-width: 100%;
+    margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .wrapper {
+        max-width: 95%;
+    }
+}
